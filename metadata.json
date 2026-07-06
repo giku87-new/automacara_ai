@@ -1,0 +1,6 @@
+{
+  "name": "Vertical Construct",
+  "description": "Aplicație profesională pentru închiriere automacarale de mare tonaj și logistică utilaje grele în Republica Moldova",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
