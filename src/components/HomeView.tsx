@@ -95,7 +95,7 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
       </section>
 
       {/* 2. STATS BAR SECTION */}
-      <section className="bg-structural-charcoal py-10 border-b-4 border-safety-yellow">
+      <section className="bg-[#111111] py-10 border-b border-[#222222]">
         <div className="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-center text-center gap-1">
             <span className="font-display text-4xl md:text-5xl font-extrabold text-safety-yellow">
@@ -133,12 +133,12 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
       </section>
 
       {/* 3. EXPERTISE / SERVICES SECTION */}
-      <section className="py-24 bg-surface max-w-7xl mx-auto px-6 md:px-16 flex flex-col gap-12">
-        <div className="flex flex-col gap-3 border-l-8 border-safety-yellow pl-4">
-          <h2 className="font-display text-3xl font-extrabold text-primary uppercase tracking-tighter">
+      <section className="py-24 bg-[#0A0A0A] max-w-7xl mx-auto px-6 md:px-16 flex flex-col gap-12">
+        <div className="flex flex-col gap-3 border-l-4 border-safety-yellow pl-4">
+          <h2 className="font-display text-3xl font-extrabold text-white uppercase tracking-tighter">
             Expertiza Noastră
           </h2>
-          <p className="font-sans text-sm text-on-surface-variant max-w-xl">
+          <p className="font-sans text-sm text-gray-400 max-w-xl">
             Oferim soluții complete de ridicare și transport greu pentru construcții civile și industriale, operate exclusiv de personal tehnic autorizat ISCIR.
           </p>
         </div>
@@ -148,18 +148,18 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
           {SERVICES.map((srv) => (
             <div 
               key={srv.id}
-              className="bg-white border border-outline-variant p-8 flex flex-col gap-6 relative overflow-hidden group hover:shadow-lg transition-shadow border-t-4 border-t-safety-yellow"
+              className="bg-[#141414] border border-[#222222] p-8 flex flex-col gap-6 relative overflow-hidden rounded-2xl group hover:border-[#333333] transition-all"
             >
-              <div className="bg-surface-container p-4 w-max text-primary">
+              <div className="bg-[#1A1A1A] p-4 w-max text-safety-yellow rounded-lg border border-[#222222]">
                 <span className="material-symbols-outlined text-3xl">
                   {srv.icon}
                 </span>
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="font-display text-lg font-bold text-primary uppercase">
+                <h3 className="font-display text-lg font-bold text-white uppercase">
                   {srv.title}
                 </h3>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed">
+                <p className="font-sans text-xs text-gray-400 leading-relaxed">
                   {srv.description}
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
                   setCurrentTab('servicii');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="mt-auto font-sans font-bold text-xs text-primary uppercase flex items-center gap-2 group-hover:text-secondary transition-colors self-start"
+                className="mt-auto font-sans font-bold text-xs text-safety-yellow uppercase flex items-center gap-2 hover:text-white transition-colors self-start"
               >
                 Detalii Serviciu 
                 <span className="material-symbols-outlined text-sm">chevron_right</span>
@@ -179,18 +179,18 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
       </section>
 
       {/* 4. PREF_EQUIPMENT BLOCK (XCMG XCT25 showcase) */}
-      <section className="bg-white py-20 border-t border-b border-outline-variant">
+      <section className="bg-[#0D0D0D] py-20 border-t border-b border-[#222222]">
         <div className="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Image Showcase */}
-          <div className="relative group overflow-hidden border-4 border-primary industrial-shadow">
+          <div className="relative group overflow-hidden border border-[#222222] rounded-2xl shadow-xl">
             <img 
               alt="Macara XCMG XCT25 pe șantier" 
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" 
               src={CRANE_ACTION_URL}
               referrerPolicy="no-referrer"
             />
-            <div className="absolute bottom-4 left-4 bg-primary text-safety-yellow font-sans font-bold text-[10px] tracking-wider uppercase px-4 py-1.5 border border-safety-yellow">
+            <div className="absolute bottom-4 left-4 bg-primary text-safety-yellow font-sans font-bold text-[10px] tracking-wider uppercase px-4 py-1.5 border border-[#333333] rounded">
               ECHIPAMENT PREMIUM
             </div>
           </div>
@@ -201,31 +201,31 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
               <span className="material-symbols-outlined text-safety-yellow text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                 precision_manufacturing
               </span>
-              <h2 className="font-display text-2xl md:text-3xl font-extrabold text-primary uppercase">
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold text-white uppercase">
                 XCMG XCT25
               </h2>
             </div>
-            <p className="font-sans text-xs text-on-surface-variant leading-relaxed">
+            <p className="font-sans text-xs text-gray-400 leading-relaxed">
               Automacara de ultimă generație, proiectată pentru eficiență maximă în medii urbane și industriale restrânse. Performanță ridicată, siguranță optimizată prin senzori automați de sarcină și precizie milimetrică în manevrare.
             </p>
 
             {/* Micro spec table */}
-            <div className="grid grid-cols-2 gap-4 border-t border-b border-outline-variant py-6 text-xs">
+            <div className="grid grid-cols-2 gap-4 border-t border-b border-[#222222] py-6 text-xs">
               <div className="flex flex-col gap-1">
-                <span className="text-on-surface-variant uppercase font-medium text-[10px] tracking-wider">CAPACITATE MAXIMĂ</span>
-                <span className="font-bold text-primary text-sm">25 Tone</span>
+                <span className="text-gray-500 uppercase font-medium text-[10px] tracking-wider">CAPACITATE MAXIMĂ</span>
+                <span className="font-bold text-white text-sm">25 Tone</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-on-surface-variant uppercase font-medium text-[10px] tracking-wider">LUNGIME BRAȚ TELESCOPIC</span>
-                <span className="font-bold text-primary text-sm">34 m</span>
+                <span className="text-gray-500 uppercase font-medium text-[10px] tracking-wider">LUNGIME BRAȚ TELESCOPIC</span>
+                <span className="font-bold text-white text-sm">34 m</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-on-surface-variant uppercase font-medium text-[10px] tracking-wider">LUNGIME CU PRELUNGITOR</span>
-                <span className="font-bold text-primary text-sm">42.3 m</span>
+                <span className="text-gray-500 uppercase font-medium text-[10px] tracking-wider">LUNGIME CU PRELUNGITOR</span>
+                <span className="font-bold text-white text-sm">42.3 m</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-on-surface-variant uppercase font-medium text-[10px] tracking-wider">TRACȚIUNE ȘASIU</span>
-                <span className="font-bold text-primary text-sm">6x4 Greu</span>
+                <span className="text-gray-500 uppercase font-medium text-[10px] tracking-wider">TRACȚIUNE ȘASIU</span>
+                <span className="font-bold text-white text-sm">6x4 Greu</span>
               </div>
             </div>
 
@@ -233,7 +233,7 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
             <div className="flex flex-col sm:flex-row gap-4 mt-2">
               <button 
                 onClick={() => onOpenQuoteModal("Închiriere Automacarale (XCMG XCT25)")}
-                className="bg-safety-yellow text-primary font-sans font-bold text-xs tracking-wider uppercase px-6 py-4 border border-primary industrial-shadow hover:bg-primary hover:text-safety-yellow active:translate-y-[2px] transition-all flex items-center justify-center gap-2"
+                className="bg-safety-yellow text-primary font-sans font-bold text-xs tracking-wider uppercase px-6 py-4 rounded-lg border border-transparent hover:bg-white hover:text-primary active:translate-y-[2px] transition-all flex items-center justify-center gap-2 shadow-md shadow-amber-500/5"
               >
                 REZERVĂ ECHIPAMENTUL
               </button>
@@ -242,7 +242,7 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
                   setCurrentTab('calculator');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="bg-transparent border border-primary text-primary hover:bg-primary hover:text-white font-sans font-bold text-xs tracking-wider uppercase px-6 py-4 transition-colors flex items-center justify-center gap-2"
+                className="bg-transparent border border-[#333333] text-white hover:bg-[#111111] hover:border-gray-500 rounded-lg font-sans font-bold text-xs tracking-wider uppercase px-6 py-4 transition-all flex items-center justify-center gap-2"
               >
                 VERIFICĂ CAPACITATE
               </button>
@@ -253,24 +253,24 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
       </section>
 
       {/* 5. TESTIMONIALS SECTION */}
-      <section className="py-24 bg-surface border-b border-outline-variant">
+      <section className="py-24 bg-[#0A0A0A] border-b border-[#222222]">
         <div className="max-w-4xl mx-auto px-6 text-center flex flex-col gap-8 items-center">
           <span className="material-symbols-outlined text-5xl text-safety-yellow" style={{ fontVariationSettings: "'FILL' 1" }}>
             format_quote
           </span>
-          <h2 className="font-display text-2xl font-extrabold text-primary uppercase tracking-tighter">
+          <h2 className="font-display text-2xl font-extrabold text-white uppercase tracking-tighter">
             Ce Spun Partenerii Noștri
           </h2>
 
           <div className="relative min-h-[180px] flex items-center justify-center">
             <div className="transition-all duration-500 animate-in fade-in zoom-in-95">
-              <p className="font-sans text-xs md:text-sm text-on-surface-variant italic leading-relaxed max-w-2xl mx-auto">
+              <p className="font-sans text-xs md:text-sm text-gray-300 italic leading-relaxed max-w-2xl mx-auto">
                 "{TESTIMONIALS[activeTestimonial].text}"
               </p>
-              <h4 className="font-sans font-bold text-xs text-primary mt-4 uppercase">
+              <h4 className="font-sans font-bold text-xs text-white mt-4 uppercase">
                 {TESTIMONIALS[activeTestimonial].author}
               </h4>
-              <p className="font-sans text-[10px] text-outline uppercase tracking-widest mt-1">
+              <p className="font-sans text-[10px] text-gray-500 uppercase tracking-widest mt-1">
                 {TESTIMONIALS[activeTestimonial].company}
               </p>
             </div>
@@ -281,14 +281,14 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
             <button 
               onClick={prevTestimonial}
               aria-label="Previous testimonial"
-              className="w-10 h-10 border border-outline hover:bg-primary hover:text-white transition-colors flex items-center justify-center"
+              className="w-10 h-10 border border-[#222222] bg-[#111111] hover:bg-[#1A1A1A] hover:border-[#333333] text-white transition-all rounded-lg flex items-center justify-center"
             >
               <span className="material-symbols-outlined text-sm">arrow_back</span>
             </button>
             <button 
               onClick={nextTestimonial}
               aria-label="Next testimonial"
-              className="w-10 h-10 border border-outline hover:bg-primary hover:text-white transition-colors flex items-center justify-center"
+              className="w-10 h-10 border border-[#222222] bg-[#111111] hover:bg-[#1A1A1A] hover:border-[#333333] text-white transition-all rounded-lg flex items-center justify-center"
             >
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </button>
@@ -297,20 +297,20 @@ export default function HomeView({ setCurrentTab, onOpenQuoteModal }: HomeViewPr
       </section>
 
       {/* 6. CALL TO ACTION CONTAINER */}
-      <section className="bg-primary py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-[#111111] py-24 text-white text-center relative overflow-hidden border-b border-[#222222]">
         {/* subtle geometric micro grid */}
-        <div className="absolute inset-0 opacity-15 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#FDCB6E 1.5px, transparent 1.5px)', backgroundSize: '20px 20px' }}></div>
+        <div className="absolute inset-0 opacity-15 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#F59E0B 1.5px, transparent 1.5px)', backgroundSize: '20px 20px' }}></div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-6">
           <h2 className="font-display text-3xl md:text-4xl font-extrabold uppercase tracking-tight max-w-2xl">
             GATA SĂ RIDICĂM PROIECTUL TĂU?
           </h2>
-          <p className="font-sans text-xs md:text-sm text-on-primary-container max-w-xl leading-relaxed">
+          <p className="font-sans text-xs md:text-sm text-gray-400 max-w-xl leading-relaxed">
             Contactați dispeceratul nostru tehnic chiar astăzi pentru a primi consultanță gratuită, diagrame de sarcină specifice și o ofertă personalizată adaptată perfect șantierului dumneavoastră.
           </p>
           <button 
             onClick={() => onOpenQuoteModal()}
-            className="bg-safety-yellow text-primary font-sans font-bold text-xs tracking-wider uppercase px-10 py-5 hover:bg-white hover:text-primary transition-all border border-primary industrial-shadow shadow-yellow-500/20 active:translate-y-[2px]"
+            className="bg-safety-yellow text-primary font-sans font-bold text-xs tracking-wider uppercase px-10 py-5 rounded-lg hover:bg-white hover:text-primary transition-all active:translate-y-[2px]"
           >
             SOLICITĂ OFERTĂ ACUM
           </button>

@@ -5,37 +5,37 @@
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   
-  --color-surface: #f7f9fc;
-  --color-surface-dim: #d8dadd;
-  --color-surface-bright: #f7f9fc;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f2f4f7;
-  --color-surface-container: #eceef1;
-  --color-surface-container-high: #e6e8eb;
-  --color-surface-container-highest: #e0e3e6;
-  --color-on-surface: #191c1e;
-  --color-on-surface-variant: #434749;
-  --color-inverse-surface: #2d3133;
-  --color-inverse-on-surface: #eff1f4;
-  --color-outline: #747879;
-  --color-outline-variant: #c3c7c8;
-  --color-primary: #181f21;
+  --color-surface: #0A0A0A;
+  --color-surface-dim: #111111;
+  --color-surface-bright: #1A1A1A;
+  --color-surface-container-lowest: #050505;
+  --color-surface-container-low: #0D0D0D;
+  --color-surface-container: #111111;
+  --color-surface-container-high: #141414;
+  --color-surface-container-highest: #1A1A1A;
+  --color-on-surface: #E5E7EB;
+  --color-on-surface-variant: #9CA3AF;
+  --color-inverse-surface: #F3F4F6;
+  --color-inverse-on-surface: #0A0A0A;
+  --color-outline: #333333;
+  --color-outline-variant: #222222;
+  --color-primary: #111111;
   --color-on-primary: #ffffff;
-  --color-primary-container: #2d3436;
-  --color-on-primary-container: #959c9f;
-  --color-secondary: #7c5800;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #ffcd70;
-  --color-on-secondary-container: #785500;
-  --color-safety-yellow: #FDCB6E;
-  --color-structural-charcoal: #2D3436;
-  --color-steel-gray: #636E72;
+  --color-primary-container: #1A1A1A;
+  --color-on-primary-container: #D1D5DB;
+  --color-secondary: #F59E0B;
+  --color-on-secondary: #0A0A0A;
+  --color-secondary-container: #1E1B4B;
+  --color-on-secondary-container: #F59E0B;
+  --color-safety-yellow: #F59E0B;
+  --color-structural-charcoal: #111111;
+  --color-steel-gray: #6B7280;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-surface);
-  color: var(--color-on-surface);
+  background-color: #0A0A0A;
+  color: #D1D5DB;
 }
 
 .material-symbols-outlined {
@@ -55,17 +55,19 @@ body {
 }
 
 .industrial-shadow {
-  box-shadow: 4px 4px 0px 0px #181f21;
+  box-shadow: 0 4px 20px -2px rgba(245, 158, 11, 0.08);
+  border: 1px solid #222222;
 }
 
 .industrial-shadow-hover:hover {
-  box-shadow: 6px 6px 0px 0px #181f21;
-  transform: translate(-2px, -2px);
+  box-shadow: 0 8px 30px -4px rgba(245, 158, 11, 0.15);
+  transform: translateY(-2px);
+  border-color: #333333;
+  transition: all 0.3s ease;
 }
 
 .industrial-shadow-active:active {
-  box-shadow: 2px 2px 0px 0px #181f21;
-  transform: translate(2px, 2px);
+  transform: translateY(1px);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

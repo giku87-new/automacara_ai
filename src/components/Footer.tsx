@@ -16,19 +16,16 @@ export default function Footer({ setCurrentTab }: FooterProps) {
   };
 
   return (
-    <footer className="bg-primary border-t-4 border-safety-yellow w-full py-16 text-white font-sans mt-auto">
+    <footer className="bg-primary border-t border-[#222222] w-full py-16 text-white font-sans mt-auto">
       <div className="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         
         {/* Brand Column */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <img 
-              alt="Vertical Construct logo white edition" 
-              className="h-10 w-auto bg-white p-0.5 border border-safety-yellow" 
-              src={LOGO_URL}
-              referrerPolicy="no-referrer"
-            />
-            <span className="font-display font-extrabold text-lg text-safety-yellow tracking-tighter uppercase">
+            <div className="w-9 h-9 rounded bg-gradient-to-tr from-amber-500 to-orange-700 flex items-center justify-center shadow-md">
+              <span className="text-white font-extrabold text-base">V</span>
+            </div>
+            <span className="font-display font-extrabold text-lg text-white tracking-tighter uppercase">
               VERTICAL CONSTRUCT
             </span>
           </div>

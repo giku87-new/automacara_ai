@@ -40,17 +40,14 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
             onClick={() => handleTabClick('acasa')} 
             className="flex items-center gap-3 cursor-pointer group"
           >
-            <img 
-              alt="Vertical Construct Logo" 
-              className="h-12 w-auto object-contain bg-surface-container-lowest p-1 rounded-none border border-safety-yellow transition-transform duration-300 group-hover:scale-105" 
-              src={LOGO_URL}
-              referrerPolicy="no-referrer"
-            />
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-700 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-md">
+              <span className="text-white font-extrabold text-lg">V</span>
+            </div>
             <div className="flex flex-col">
-              <span className="font-display text-lg md:text-xl font-extrabold text-safety-yellow tracking-tighter uppercase leading-none">
+              <span className="font-display text-lg md:text-xl font-extrabold text-white tracking-tighter uppercase leading-none">
                 VERTICAL CONSTRUCT
               </span>
-              <span className="text-[10px] text-white opacity-70 tracking-widest uppercase">
+              <span className="text-[9px] text-safety-yellow font-bold tracking-widest uppercase">
                 MOLDOVA CRANES
               </span>
             </div>
@@ -124,13 +121,10 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
             {/* Drawer Header */}
             <div className="p-6 border-b border-outline-variant bg-primary flex justify-between items-center">
               <div className="flex items-center gap-2">
-                <img 
-                  alt="Vertical Construct logo small" 
-                  className="h-9 w-auto bg-white p-0.5" 
-                  src={LOGO_URL}
-                  referrerPolicy="no-referrer"
-                />
-                <span className="font-display font-bold text-sm text-safety-yellow tracking-tighter uppercase">
+                <div className="w-8 h-8 rounded bg-gradient-to-tr from-amber-500 to-orange-700 flex items-center justify-center shadow-sm">
+                  <span className="text-white font-extrabold text-sm">V</span>
+                </div>
+                <span className="font-display font-extrabold text-xs text-white tracking-tighter uppercase">
                   VERTICAL CONSTRUCT
                 </span>
               </div>
